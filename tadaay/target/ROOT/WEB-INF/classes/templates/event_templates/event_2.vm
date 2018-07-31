@@ -1,0 +1,16 @@
+<section id="eventSecond">
+	<div class="container">
+	    <div class="row"> 
+				<div class="col-sm-12 col-md-3"> 
+				<img alt="Holi India Color Festival" src="<%=request.getContextPath()%>/resources/images/event/bg10.jpg" style="height:230px;"></div>
+				<div class="col-sm-12 col-md-9">
+						<h1 class="title"> Holi India Color Festival </h1>
+						<div class="evinfoh">
+						 <i class="fa fa-calendar" aria-hidden="true">
+						 </i> 02 Mar 2018 <br> <i class="fa fa-map-marker " aria-hidden="true"></i> 
+						 <a href="#"> New Delhi </a>, <a href="#a"> India </a> <br> <i class="fa fa-university" aria-hidden="true"></i> Golden Triangle Tourist Circuit </div>
+				</div>
+		</div>
+		<p>Holi India Color Festival is a spring festival, also known as the festival of colors or the festival of love. The holiday signifies the victory of good over evil. It is an ancient Hindu religious festival which has become popular with non-Hindus in many parts of South Asia, as well as people of other communities outside Asia. It is primarily observed in India, Nepal, and other regions of the world with significant populations of Hindus or people of Indian origin. The festival has, in recent times, spread to parts of Europe and North America as a spring celebration of love, frolic, and colors. Holi India Color Festival is an event and I like events... </p>
+	</div>
+</section>

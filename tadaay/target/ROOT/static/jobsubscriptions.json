@@ -1,0 +1,36 @@
+{
+ "data" : [
+ 	{
+ 		"Id" : "1",
+		"noPostings" : "05",
+		"postingType" : "Walkin",
+		"used" : "3",
+		"balance" : "2",
+		"procuredDate" : "08-02-2018",
+		"expiryDate" : "08-02-2018",
+		"status" : "Active"
+ 	},
+ 	{
+ 		"Id" : "2",
+		"noPostings" : "05",
+		"postingType" : "Regular",
+		"used" : "4",
+		"balance" : "1",
+		"procuredDate" : "08-02-2018",
+		"expiryDate" : "08-02-2018",
+		"status" : "Active"
+		
+ 	},
+ 	{
+ 		"Id" : "3",
+		"noPostings" : "05",
+		"postingType" : "hot",
+		"used" : "5",
+		"balance" : "0",
+		"procuredDate" : "08-02-2018",
+		"expiryDate" : "08-02-2018",
+		"status" : "Expired"
+ 	}
+ 
+ ]
+}

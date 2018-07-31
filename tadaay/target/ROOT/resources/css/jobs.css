@@ -1,0 +1,583 @@
+.inner-page-banner-area:after{
+	background: rgba(0, 0, 0, 0.21);
+}
+.single-job{
+	background-color:#cccccc5c;
+	padding:15px;
+	margin-bottom:10px;
+}
+.single-job h2{
+	color:#000;
+	font-weight:bold;
+	font-size:20px;
+}
+.alljobs-sections{
+	padding:50px 0px;
+}
+.posting{
+	text-align:right;
+	font-size: 12px;
+}
+.single-job h2{
+	margin-bottom:5px;
+}
+.single-job h3{
+	color:red;
+	margin-bottom:5px;
+	font-size:14px;
+}
+.single-job p{
+	color:#000;
+	margin-bottom:5px;
+	font-weight:300;
+}
+.jobviewBtn{
+	text-align:right;
+}
+.jobviewBtn a{
+	text-align:right;
+	background-color:#00BCD3;
+	padding:5px 20px;
+	color:#000;
+}
+.job-location p{
+	color:#2a9efb;
+}
+.single-job p.job-exp{
+	font-weight:bold;
+}
+.single-job p.job-summery{
+	font-weight:500;
+}
+.row-nopadding{
+	padding-left:0px;
+	padding-right:0px
+}
+.jobfilter-section{
+	background-color:#a6d5ea30;
+	padding:0px;
+	
+	margin-bottom:15px;
+}
+.jobfilter-section h4{
+	margin-bottom:5px;
+	background-color:#a6d5ea30;
+	padding:5px;
+}
+.jobfilter-section ul{
+	padding:15px;
+}
+.jobfilter-section a{
+	padding:5px 15px 5px 15px;
+	display:block;
+	font-weight:bold;
+	color:#000;
+}
+.jobfilter-section .panel a{
+	padding:5px 15px 5px 15px;
+	display:block;
+	font-weight:normal;
+	color:#03A9F4;
+}
+.jobfilter-section ul li input{
+	margin-right:10px;
+}
+.jobfilter-section ul li span{
+	float:right;
+}
+.featured-employers h3{
+	font-size:18px;
+	font-weight:bold;
+}
+.featured-employers ul{
+	border-bottom:1px dotted #ccc;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+.featured-employers{
+	margin-bottom:15px;
+}
+.featured-employers ul li{
+	margin-bottom:10px;
+}
+.featured-employers ul li img{
+	display:inline-block;
+	width:80px;
+	margin-right:10px;
+}
+.filters-hd{
+	padding-left:15px;
+}
+ .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+.accordion{
+	background-color:#a6d5ea30
+}
+.panel.show {
+    opacity: 1;
+    max-height: 800px;
+    background-color: #a6d5ea03;
+}
+.accordion.active::before {
+    content: "\f067";
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+     color:#000;
+     font-family: FontAwesome;
+}
+.accordion::before {
+    content: "\f068";
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+     color:#000;
+     font-family: FontAwesome;
+}
+.inner-page-banner-area .pagination-area{
+	padding:15px 50px 15px 50px;
+}
+.padding-lt0{
+	padding-left:0px;
+}
+.jobsearch-area .form-control{
+	height:40px;
+}
+.jobsearch-area button{
+	height:40px;
+	background: #25c1e7;
+	border:0px;
+	padding:0px 20px;
+	color:#fff;
+	font-size:20px;
+}
+.jobsearch-area h2{
+	padding-left:15px;
+}
+.singlejobs-sections{
+	padding:50px 0px
+}
+.singlejobs-sections h2{
+	font-size:25px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.singlejobs-sections h3{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.singlejobs-sections .company-name{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:5px;
+	color:#03a9f4;
+}
+.singlejobs-sections .years-bg{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+	color:red;
+}
+.singlejobs-sections p{
+	font-size:14px;
+	margin-bottom:5px;
+	color:#000;
+	line-height:30px;
+	margin-bottom:15px;
+}
+.singlejobs-sections h4{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.singlejobs-sections h5{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:15px;
+	margin-top:30px;
+}
+.job-applybtn{
+	background:#4bb4e4;
+	padding:5px 20px;
+	border-radius:8px;
+	color:#000;
+}
+.similar-companies{
+	border-left:1px dashed #ccc;
+	padding-left:15px;
+}
+.rt-company-list img{
+	margin-bottom:10px;
+}
+.rt-company-list{
+	border-bottom:1px solid #ccc;
+	padding-bottom:15px;
+	margin-bottom:15px
+}
+.rt-company-list a{
+	font-size:12px;
+}
+.jobsearch-area button.addresume{
+	background-color:#0a8fa0;
+	color:#fff;
+	paddding:5px 20px;
+	margin-top:20px;
+}
+.jobsmain-sections{
+	padding:50px 0px;
+}
+.jobsmain-sections h2{
+	padding:0px;
+	margin:0px;
+}
+.skill-set{
+	margin-bottom:30px;
+}
+.skill-set h2{
+	padding:15px;
+	background-color:#a00a79b3;
+	font-size:18px;
+	color:#fff;
+	margin-bottom:0px;
+	text-transform:uppercase;
+}
+.skill-set ul{
+	border:1px solid #ccc;
+	padding:0px;
+}
+.skill-set ul li{
+	padding:5px 15px;
+	border-bottom:1px solid #ccc;
+	background-color:#cccccc52;
+}
+.skill-set ul li:last-child{
+	border:0px;
+}
+.jobrequest-call{
+	background-color:#089caf;
+	padding:15px 15px 30px 15px;
+	text-align:center;
+}
+.jobrequest-call h3{
+	color:#fff;
+	font-size:16px;
+}
+.jobrequest-call .enternumber{
+	border:1px solid #fff;
+	border-radius:20px;
+	padding:5px 25px;
+	font-size:12px;
+	margin-bottom:15px;
+	background: transparent;
+}
+.jobrequest-call a{
+	border:1px solid #efa456;
+	border-radius:20px;
+	padding:5px 25px;
+	font-size:14px;
+	color:#000;
+	background:#efa456;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.jobrequest-call .enternumber::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 1; /* Firefox */
+}
+.jobrequest-call .enternumber:-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: #000;
+}
+
+.jobrequest-call .enternumber::-ms-input-placeholder { /* Microsoft Edge */
+     color: #000;
+}
+.top-employers{
+	border:1px solid #ccc;
+	padding:15px;
+}
+.top-employers ul li{
+	display:inline-block;
+	border-right:1px solid #ccc;
+	padding:22px;
+}
+.top-employers ul li a{
+	color:#000;
+}
+.top-employers ul li:last-child{
+	border:0px;
+}
+.top-employers img{
+	display:block;
+	width:150px;
+	margin-bottom:15px;
+	height:60px;
+}
+.todayjobsection h3{
+	background-color:#cccccc63;
+	padding:5px 15px;
+	text-transform:uppercase;
+	font-size:16px;
+	border-bottom:5px solid #03a9f4;
+	margin-bottom:0px;
+	font-weight:bold;
+	letter-spacing: 2px;
+}
+.todayjobsection ul{
+	padding:30px 15px;
+	margin:0;
+	overflow: auto;
+    height: 230px;
+}
+.todayjobsection ul img{
+	display:block;
+	width:100px;
+	margin-bottom:15px;
+}
+.todayjobsection{
+	margin-top:30px;
+}
+.leftpanel-jobs{
+	padding:0px;
+	border-top:1px solid #ccc;
+}
+.leftpanel-companies{
+	padding:0px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.leftpanel-jobslist{
+	padding:30px 15px;
+	overflow: auto;
+    height: 250px;
+}
+.leftpanel-jobslist h4{
+	font-weight:normal;
+	margin-bottom:5px;
+	font-size:16px;
+}
+.leftpanel-jobslist p{
+	font-weight:bold;
+	margin-bottom:15px;
+	font-size:14px;
+	padding-bottom:15px;
+	border-bottom:1px dashed #ccc;
+}
+.job-updates{
+	background-color: #ccc6;
+    padding: 5px 15px 5px 0px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    margin-top:50px;
+}
+.job-updates p span{
+background-color: #00bcd4;
+    padding: 8px 15px;
+    color:#fff;
+    position:relative;
+    margin-right:50px;
+    }
+    .job-updates p span:after{
+    content: "";
+    	border-top: 15px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #00bcd4;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    }
+.job-updates p{
+	margin-bottom:0px;
+}
+.topjobsection{
+	border:1px solid #ccc;
+	padding-bottom:15px;
+}
+.topjobsection h3{
+	border-bottom:1px solid #ccc;
+	padding: 0px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.topjobs-list{
+	border-bottom:1px solid #ccc;
+	margin-bottom:15px;
+}
+.topjobs-list:last-child{
+	border:0px;
+}
+.topjobs-list h4{
+	font-size:16px;
+	margin-bottom:5px;
+}
+.topjobs-list h4 span{
+	font-size:12px;
+	color:#ff8100;
+	margin-left:10px;
+}
+.topjobs-list p{
+	font-weight:bold;
+}
+.topjobs-list p span{
+	font-size:12px;
+}
+.topjobs-list p a{
+	font-size:12px;
+	background:green;
+	padding:5px 20px;
+	border-radius:8px;
+	margin-left:15px;
+	color:#fff;
+}
+.thisweek-walkins h2{
+	text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.thisweek-walkins ul li{
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+.thisweek-walkins ul li:last-child{
+	border:0px;
+}
+.thisweek-walkins ul li a{
+	display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.jobsby-course{
+	padding:50px 0px;
+}
+.jobsby-course h3{
+	text-transform:uppercase;
+	font-size:18px;
+	padding-left:15px;
+	font-weight:bold;
+}
+.jobsby-course .left-course{
+	border:2px solid #03a9f4;
+	padding:15px;
+}
+.jobsby-course .middle-course{
+	border:2px solid #c06;
+	padding:15px;
+}
+.jobsby-course .right-course{
+	border:2px solid #ff6a007a;
+	padding:15px;
+}
+.jobsby-course .left-course h4, .jobsby-course .middle-course h4, .jobsby-course .right-course h4{
+	border-right:1px solid #ccc;
+	font-size:16px;
+	padding: 30px 0px;
+	text-align:center;
+}
+.singlejobs-sections ul{
+	padding-left:30px;
+}
+.singlejobs-sections ul li {
+    position: relative;
+    padding-left: 15px;
+    line-height: 30px;
+}
+.singlejobs-sections ul li:before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    font-family: FontAwesome;
+    color: #25c1e7;
+    top: 0;
+}
+.top-employers {
+    border: 1px solid #ccc;
+    padding: 0px;
+    border-top: 0px;
+    padding-bottom: 15px;
+}
+.top-employers .line{display:block; margin:0px}
+.top-employers .line h2 {
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    top: -30px;
+}
+.top-employers .line h2 span {
+    background-color: white;
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+    font-weight:bold;
+}
+/************************ Responsive design CSS ********************/
+@media(max-width:767px){
+	/********************Home Page *******************/
+.top-employers ul li{
+	border:0px;
+}	
+.top-employers img{
+	width:auto;
+	height:auto;
+}
+.todayjobsection ul img{
+	width:auto;
+}
+.jobsby-course .left-course h4, .jobsby-course .middle-course h4, .jobsby-course .right-course h4{
+	border:0px;
+}
+.jobsby-course .left-course, .jobsby-course .middle-course{
+	margin-bottom:15px;
+}
+.topjobs-list h4 span{
+	margin-left:0px;
+	display:block;
+}
+.topjobs-list p span {
+    display: block;
+    margin-bottom: 5px;
+}
+.topjobs-list p a{
+	margin-left:0px;
+}
+.thisweek-walkins h2{
+	margin-top:30px;
+}
+.inner-page-banner-area .pagination-area{
+	padding:15px;
+}
+.jobsearch-area .form-control{
+	margin-bottom:10px;
+}
+.padding-lt0{
+	padding-right:0px;
+}
+.jobsearch-area button{
+	width:100%;
+}
+/************************ All Jobs page ****************/
+.featured-employers h3{
+	margin-top:30px;
+}
+.similar-companies{
+	border:0px;
+	margin-top:30px;
+}
+.singlejobs-sections h2 {
+    margin-bottom: 15px;
+}
+.singlejobs-sections .company-name{
+	margin-top:20px;
+}
+}

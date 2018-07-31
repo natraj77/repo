@@ -1,0 +1,1 @@
+ALTER TABLE `app_polyglot_batch` CHANGE `fee_discount` `fee_discount` INT NOT NULL;

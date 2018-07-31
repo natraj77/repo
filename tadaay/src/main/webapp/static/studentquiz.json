@@ -1,0 +1,17 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"courseName" : "AWS",
+		"assignedBy" : "Satheesh",
+		"assignedDate" : "27-1-2018 9:30 AM",
+		"startDate" : "27-1-2018 12:30 PM",
+		"endDate" : "28-1-2018 12:30 PM",
+		"status" : "Assigned",
+		"result" : "pass",
+		"score" : "90%"
+		
+ 	}
+ 
+ ]
+}

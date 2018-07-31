@@ -1,0 +1,24 @@
+# This script enables the bitbucket build pipeline and deploys the artifacts to QA server 
+image: schalla/maven
+
+pipelines:
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          - yum install -y maven epel-release 
+          - yum install -y awscli python-six
+          - mvn package # -B batch mode makes Maven less verbose
+          - mkdir ~/.aws
+          - echo -e "[default]\naws_access_key_id = AKIAIYI6EUOCMJE3OCWA\naws_secret_access_key = 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\n" > ~/.aws/credentials
+          - aws s3 --region ap-south-1 cp s3://demo15/id_rsa ~/.ssh/
+          - chmod 400 ~/.ssh/id_rsa
+          - yum install -y openssh-clients
+          - echo -e "Host *\n StrictHostKeyChecking no\n UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+          - ssh -l schalla 35.185.177.181 'cd /opt/apache-tomcat-8.5.9 ; date'
+          - scp target/Polyglot.war schalla@35.185.177.181:/tmp/Polyglot.war
+          - scp -r data/ schalla@35.185.177.181:/tmp/
+          - ssh -l schalla 35.185.177.181 'sudo /opt/apache-tomcat-8.5.9/bin/shutdown.sh; sleep 10'
+          - ssh -l schalla 35.185.177.181 'cd /opt/apache-tomcat-8.5.9/; sudo rm -vrf temp/* work/* logs/*'
+          - ssh -l schalla 35.185.177.181 'cd /opt/apache-tomcat-8.5.9/; sudo rm -vrf webapps/Polyglot*'
+          - ssh -l schalla 35.185.177.181 'sudo cp /tmp/Polyglot.war /opt/apache-tomcat-8.5.9/webapps/Polyglot.war'
+          - ssh -l schalla 35.185.177.181 'sudo /opt/apache-tomcat-8.5.9/bin/startup.sh;sleep 5'

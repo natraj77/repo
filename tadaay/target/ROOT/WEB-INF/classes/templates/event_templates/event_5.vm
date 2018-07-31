@@ -1,0 +1,44 @@
+<section id="eventDetails">
+	<div class="container">
+	    <div class="row"> 
+		<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+	      	 <div class="event-left">
+            <h1>Smart Logistics Summit And Awards</h1>
+            <h4>July 14, 2017 - July 14, 2017</h4>
+            <h5>Park Hyatt Hyderabad</h5>
+			 <div class="static-banner">
+				<div class="banner-img-container">
+						<img src="<%=request.getContextPath()%>/resources/images/event/bg10.jpg">
+				</div>
+			</div>
+                      
+          
+            <p class="eventAbstract">Smart Logistics Summit And Awards will be held on Jul 14 at Park Hyatt Hyderabad.</p>
+            <p></p><p style="text-align: justify;">Hyderabad is ranked 3rd amongst top 20 cities in the world to become Global Mega Hub by 2020. Growing Industrialisation will transform into a dramatic rise in the flow of Exim Cargo, putting more pressure on logistics infrastructure. Demand for warehousing is set to double in the city by 2020.<br>
+			The Ministry of Civil Aviation has further announced a new Greenfield airport at Kothagudem. The need of the hour is not only to provide logistics but to make logistics SMART. Smart logistics ensure efficient, precise and low-cost transportation. It will enable to control the increasing flow of goods more efficiently, ensure the faster flow of goods through intelligent route planning, reduced logistics cost by optimum utilization of existing infrastructure, reduces truck down times and prevents traffic congestion.</p>
+			
+			<p style="text-align: justify;">Smart logistics will improve delivery reliability and simplify the supply chain management thus benefit the Exim community.</p>
+			
+			<p style="text-align: justify;">Thus, Maritime Gateway is just-in-time to announce the debut event themed Smart Logistics Summit &amp; Awards 2017  Hyderabad. Through thoughtful and constructive sessions and interactions, the summit aims to bring together logistics service providers, users (Business community) and the Government to deliberate on the existing challenges and explore opportunities to make logistics smart.</p>
+			
+			<p style="text-align: justify;">The awards will showcase outstanding achievements and exceptional accomplishments of individuals and organizations in the logistics sector.</p>
+			<p></p>
+        </div>  
+	      </div>
+	      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+	     	<div class="eventdetailsRight">
+            <h3 class="date">event date</h3>                        
+            <h6>July 14, 2017 - July 14, 2017</h6>
+            <h6>9:00AM</h6>                       
+            <h3 class="venue">event venue</h3>
+            <h6>Park Hyatt Hyderabad , Hyderabad , Hyderabad , Telangana</h6>
+            <h3 class="address">Contact</h3>
+            <h6 class="phonenumber paddingleft25">Contact not available</h6>
+            <h6 class="mailId paddingleft25"><a href="mailto:" target="_blank"></a></h6>
+            <h6 class="website paddingleft25">
+			<a href="http://" target="_blank"></a>                        </h6>
+    </div>		
+	      </div>                
+		</div>
+	</div>
+</section>

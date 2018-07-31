@@ -1,0 +1,17 @@
+
+{
+ "data" : [
+ 	{
+ 		 "id": "1",
+    "taskName": "AWS",
+    "assignedBy": "Satheesh",
+    "assigneddate": "27-1-1018 9:30 AM",
+     "startDate": "28-1-1018 9:30 AM",
+     "endDate": "27-1-1018 12:30 PM",
+     "taskStatus": "Completed",
+     "result": "pass"
+		
+ 	}
+ 
+ ]
+}

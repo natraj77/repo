@@ -1,0 +1,32 @@
+{
+ "data" : [
+ 	{
+ 		"Id" : "1",
+		"firstName" : "sukanya",
+		"lastName" : "d",
+		"mobile" : "8639440664",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"eventName" : "Devops Work shop",
+		"status" : "Enrolled"
+ 	},
+ 	{
+ 		"Id" : "2",
+		"firstName" : "Navya",
+		"lastName" : "m",
+		"mobile" : "8639440997",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"eventName" : "Devops Work shop",
+		"status" : "Enrolled"
+		
+ 	},
+ 	{"Id" : "3",
+		"firstName" : "satheesh",
+		"lastName" : "ch",
+		"mobile" : "9999999999",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"eventName" : "Devops Work shop",
+		"status" : "Enrolled"
+ 	}
+ 
+ ]
+}

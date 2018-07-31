@@ -1,0 +1,23 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"templateName" : "Email Template1",
+		"templateType" : "Event",
+		"templateContent" : "<a class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#previewTemplate\"><i class=\"fa fa-eye\"></i>Preview</a>"
+ 	},
+ 	{
+ 		"id" : "2",
+		"templateName" : "Email Template1",
+		"templateType" : "Email",
+		"templateContent" : "<a class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#previewTemplate\"><i class=\"fa fa-eye\"></i>Preview</a>"
+ 	},
+ 	{
+ 		"id" : "3",
+		"templateName" : "Email Template3",
+		"templateType" : "News",
+		"templateContent" : "<a class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#previewTemplate\" ><i class=\"fa fa-eye\"></i>Preview</a>"
+ 	}
+ 
+ ]
+}

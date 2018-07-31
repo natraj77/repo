@@ -1,0 +1,48 @@
+{
+ "data" : [
+ 	{
+ 		"Id" : "1",
+		"courseName" : "AWS solution Architect Associate",
+		"topic" : "RDS",
+		"level" : "Beginner",
+		"question" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+		"option1" : "AWS solution Architect Associate",
+		"option2" : "linux",
+		"option3" : "AWS solution Architect Associate",
+		"option4" : "AWS solution Architect Associate",
+		"option5" : "AWS solution Architect Associate",
+		"option6" : "AWS solution Architect Associate",
+		"correctAnswer" : "Option1"
+ 	},
+ 	{
+ 		"Id" : "2",
+		"courseName" : "Devops",
+		"topic" : "RDS",
+		"level" : "Beginner",
+		"question" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+		"option1" : "Docker",
+		"option2" : "git",
+		"option3" : "Jenkins",
+		"option4" : "chef",
+		"option5" : "Ansible",
+		"option6" : "puppet",
+		"correctAnswer" : "Option2"
+		
+ 	},
+ 	{
+ 		"Id" : "3",
+		"courseName" : "Devops",
+		"topic" : "RDS",
+		"level" : "Beginner",
+		"question" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+		"option1" : "Docker",
+		"option2" : "git",
+		"option3" : "Jenkins",
+		"option4" : "chef",
+		"option5" : "Ansible",
+		"option6" : "puppet",
+		"correctAnswer" : "Option4"
+ 	}
+ 
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"courseName" : "AWS",
+		"trainingInstitute" : "PolyglotItsolutions",
+		"batchName" : "AWS administration27th jan 9:30",
+		"startDate" : "27-1-2018 9:30 AM",
+		"endtDate" : "27-1-2018 12:30 AM",
+		"mode" : "Classroom",
+		"status" : "Scheduled"
+		
+ 	}
+ 
+ ]
+}

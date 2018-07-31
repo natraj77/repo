@@ -1,0 +1,4 @@
+drop table if exists `app_users_education_details`;
+CREATE TABLE `app_users_education_details` ( `id` INT NOT NULL AUTO_INCREMENT , `partner_id` INT NOT NULL , `college_name` VARCHAR(100) NOT NULL , `degree` VARCHAR(20) NOT NULL , `specialization` VARCHAR(5) NOT NULL , `percentage` DOUBLE NOT NULL , `passed_out_year` INT NOT NULL , `last_insrt_upd_ts` DATETIME NOT NULL , `last_insrt_upd_usr_id` INT NOT NULL , PRIMARY KEY (`id`), INDEX (`partner_id`)) ENGINE = InnoDB;
+ALTER TABLE `app_users_education_details` ADD CONSTRAINT `fk_app_users_edu_details` FOREIGN KEY (`partner_id`) REFERENCES `app_users`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `app_users_experience_details` CHANGE `designation` `designation` VARCHAR(50) NOT NULL;

@@ -1,0 +1,3 @@
+CREATE TABLE `polyglot`.`app_polyglot_plan` ( `id` INT NOT NULL , `plan_name` VARCHAR(100) NOT NULL , `subscription_date` DATETIME NOT NULL , `expiration_date` DATETIME NOT NULL , `partner_id` INT NOT NULL , `last_insrt_upd_usr_id` INT NOT NULL , `last_insrt_upd_ts` DATETIME NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ALTER TABLE `app_polyglot_plan` ADD CONSTRAINT `fk_partner_id_plan` FOREIGN KEY (`partner_id`) REFERENCES `app_users`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `app_polyglot_plan` CHANGE `id` `id` INT(11) NOT NULL AUTO_INCREMENT;

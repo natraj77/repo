@@ -1,0 +1,44 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"firstName" : "sukanya",
+		"lastName" : "D",
+		"quizName" : "AWS administration",
+		"status" : "Assigned",
+		"result" : "Pass",
+		"assigneddate" : "22-01-2018",
+		"startdate" : "23-01-2018",
+		"enddate" : "24-01-2018",
+		"score" : "90%",
+		"duration" : "30 minutes"
+		
+ 	},
+ 	{
+ 		"id" : "2",
+		"firstName" : "Navya",
+		"lastName" : "M",
+		"quizName" : "AWS administration",
+		"status" : "Assigned",
+		"result" : "Fail",
+		"assigneddate" : "26-01-2018",
+		"startdate" : "27-01-2018",
+		"enddate" : "27-01-2018",
+		"score" : "90%",
+		"duration" : "30 minutes"
+ 	},
+ 	{"id" : "3",
+		"firstName" : "Satheesh",
+		"lastName" : "ch",
+		"quizName" : "AWS administration",
+		"status" : "Assigned",
+		"result" : "Fail",
+		"assigneddate" : "22-01-2018",
+		"startdate" : "22-01-2018",
+		"enddate" : "22-01-2018",
+		"score" : "90%",
+		"duration" : "30 minutes"
+ 	}
+ 
+ ]
+}

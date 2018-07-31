@@ -1,0 +1,150 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Apr, 2017, 8:44:39 PM
+    Author     : Ravindra
+*/
+
+.mT20{
+    margin-top: 20px;
+}
+.border-left{
+    border-left: 1px solid #bcc8d6;
+}
+.login-form input[type="radio"] {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: initial;
+    width: auto;
+}
+.default-big-btn{
+    padding: 10px 0;
+    width: 150px;
+}
+.login-form {
+    width  : 500px;
+    padding: 20px 30px;
+}
+.login-form .title-default-left-bold{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #bcc8d6;
+}
+.login-form .title-default-left-bold a{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.login-form .radio{
+    margin-top: 0;
+}
+.login-form .radio label{
+    width: auto;
+}
+.login-form label.control-label{
+    width: auto; 
+}
+
+.btn-linkedin {
+    background-color: #007ab9;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    padding-left: 45px;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+.btn-linkedin i {
+    color: #fff !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    left: 14px;
+    position: absolute;
+    top: 7px;
+}
+.btn-linkedin .social-btn-text {
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+    position: absolute;
+    font-size: 15px;
+    top: 9px;
+}
+.btn-facebook {
+    background-color: #4965b8;
+    cursor: pointer;
+    display: block;
+    padding-left: 45px;
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+.btn-facebook i {
+    border-radius: 2px;
+    color: #fff !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    left: 14px;
+    position: absolute;
+    top: 7px;
+}
+.btn-facebook .social-btn-text {
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    left: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 9px;
+}
+.btn-google {
+    background-color: #d34836;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    padding-left: 45px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btn-google i {
+    color: #fff !important;
+    font-size: 23px !important;
+    font-weight: bold;
+    left: 10px;
+    position: absolute;
+    top: 9px;
+}
+.btn-google .social-btn-text {
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    top: 9px;
+}
+.separator {
+    border-bottom: 1px solid #d8dde2;
+    margin: 15px 0;
+}
+
+
+.login-footer{
+    border-top : 1px solid #bcc8d6;
+    padding-top: 15px;
+}
+.have-exp{
+    color: #fdc800;
+    float: left;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}

@@ -1,0 +1,25 @@
+/*--  Placeholder  --*/
+@mixin placeholder($color, $font-size, $font-family){
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font-size; 
+    font-family: $font-family;
+  }
+  &:-moz-placeholder {
+    /*/ Firefox 18- /*/
+    color: $color;
+    font-size: $font-size; 
+    font-family: $font-family;
+  }
+  &::-moz-placeholder {
+    /*/ Firefox 19+ /*/
+    color: $color;
+    font-size: $font-size; 
+    font-family: $font-family;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size; 
+    font-family: $font-family;
+  }
+}

@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Apr, 2017, 4:51:49 PM
+    Author     : Ahex
+*/
+.table{
+    thead{
+        th{
+            span{
+                display: block;
+            }
+            &:last-child{
+                padding-right: 5px;
+                text-align: center;
+                min-width: 120px !important;
+            }
+        }
+    }
+}
+#manageCourses{
+    tr{
+        th{
+            white-space: nowrap;
+        }  
+        td{
+            .btn{
+                i{
+                    margin-right: 5px;
+                }
+            }
+            &.actions{
+                .btn{
+                    i{
+                        margin-right: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}      
+#manageBranches{
+    tr{
+        th{
+            white-space: nowrap;
+        }
+        td{
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

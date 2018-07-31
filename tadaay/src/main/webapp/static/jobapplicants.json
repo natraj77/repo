@@ -1,0 +1,30 @@
+{
+ "data" : [
+ 	{
+ 		"Id" : "1",
+		"fName" : "sukanya",
+		"lName" : "D",
+		"jobTitle" : "AWS Solution Architect Associate",
+		"receivedDate" : "07-02-2018",
+		"finalResult" : "Qualified"
+ 	},
+ 	{
+ 		"Id" : "2",
+		"fName" : "sukanya",
+		"lName" : "D",
+		"jobTitle" : "AWS Solution Architect Associate",
+		"receivedDate" : "07-02-2018",
+		"finalResult" : "Qualified"
+		
+ 	},
+ 	{
+ 		"Id" : "3",
+		"fName" : "sukanya",
+		"lName" : "D",
+		"jobTitle" : "AWS Solution Architect Associate",
+		"receivedDate" : "07-02-2018",
+		"finalResult" : "Not Qualified"
+ 	}
+ 
+ ]
+}

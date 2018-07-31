@@ -1,0 +1,799 @@
+.menu{
+	height:71px;
+	width:1052px;
+	background-color:#2b2e3b;
+	float:left;
+	color:#fff;
+}
+.navbar{
+	min-height:71px;
+	 border-radius: 0;
+}
+.navbar ul li{
+	padding:10px;
+	color:#fff;
+}
+
+.navbar ul li:hover{
+   background-color:#00a875;
+   min-height:70.1px;
+   color:#fff; 
+}
+
+.s1{
+ height:5px;
+ background-color:#27c9d8;
+}
+.s2{
+ height:85px;
+ background-color:#0b0909;
+}
+.s2 ul{
+	list-style-type:none;
+	text-decoration:none;
+}
+.s2 ul li{
+	margin-top:15px;	
+}
+.ss{
+	width:531px;
+	height:320px;
+	margin-top:50px;
+	background-color:#fbfbfb;
+}
+.s3{
+	margin-top:112px;
+	margin-left:270px;
+}
+.s4{
+	height:350px;
+	background-color:#151922;
+}
+.sw{
+	width:310px;
+	height:1px;
+	background-color:#45868c;
+	margin-left:470px;
+}
+.s10{
+	width:463px;
+	height:400px;
+	background-image:url("../images/bg1.png");
+	background-repeat:no-repeat;
+	margin-left:80px;
+	text-align:justify;
+}
+.s11{
+	width:463px;
+	height:400px;
+	background-image:url("../images/bg2.png");
+	background-repeat:no-repeat;
+	margin-left:180px;
+	text-align:justify;
+	margin-bottom:35px;
+}
+.s12{
+	margin-left:60px;
+}
+.s12 img:hover{
+	
+	-webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+.s12 img{
+	-webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+	
+}
+
+.s5{
+	background-color:#00a875;
+	margin-left:100px;
+	height:220px;
+	width:240px;
+}
+
+.s6{
+	background-color:#00a875;
+	margin-left:40px;
+	height:220px;
+	width:240px;
+}
+.s7{
+	background-color:#9cdbed;
+}
+.s8{
+	margin-left:130px;
+	margin-top:20px;
+}
+.s9{
+	background-color:#9cdbed;
+}
+
+
+
+/*------------------COURSE CSS START------------------------*/
+
+.c1{
+ height:5px;
+ background-color:#27c9d8;
+}
+.c2{
+ height:85px;
+ background-color:#0b0909;
+}
+
+.c3{
+	margin-left:90px;
+	margin-top:90px;
+}
+.cc{
+	width:300px;
+	height:300px;
+	border:3px solid #094365;
+	margin-left:760px;
+	margin-top:40px;
+}
+.c4{
+	 margin-top:15px;
+}
+.c5{
+	background-color:#e1f2fa;
+	padding:30px;
+}
+.c6{
+ border-bottom:2px solid #999;
+ width:1000px;
+ margin-left:70px;
+ padding-top:40px;
+}
+.c7{
+ border-bottom:2px solid #999;
+ width:1000px;
+ margin-left:90px;
+ padding-top:10px;
+ margin-bottom:20px;
+}
+.c8{
+	margin-left:65px;
+	margin-right:10px;
+}
+.c9{
+	background-color:#e1f2fa;
+}
+.c10{
+	background-color:#2a2e3c;
+	color:#fff;
+	width:1000px;
+	margin-left:90px;
+}
+.c11{
+	background-color:#2a2e3c;
+	color:#fff;
+	width:1000px;
+	margin-bottom:5px;
+}
+.c12{
+	background-image:url("../images/fa.jpg");
+	background-repeat:no-repeat;
+	margin-left:110px;
+	box-shadow: 3px 3px 2px #888888;
+}
+
+.c13{
+	width:266px;
+	height:200px;
+	background-color:#1c7766;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px #888888;
+	margin-left:100px;
+	margin-bottom:20px;
+	border:2px solid #fff;
+}
+
+.c14{
+	width:266px;
+	height:200px;
+	background-color:#0e4e6d;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px #888888;
+	margin-left:100px;
+	margin-bottom:20px;
+	border:2px solid #fff;
+}
+.c15{
+	width:510px;
+	height:200px;
+	margin-left:100px;
+	margin-bottom:20px;
+	border-right:1px solid #666;
+	margin-top:20px;
+}
+.c16{
+	width:460px;
+	height:200px;
+	margin-left:50px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.c17{
+	margin-left:50px;
+	width:1050px;
+	background-color:#818c91;
+	margin-top:10px;
+}
+
+/*------------------Trainings CSS START------------------------*/
+
+.d5{
+ height:85px;
+ background-color:#151922;
+}
+.d6{
+	 margin-top:15px;
+}
+
+/*.d7{
+	height:90px;
+    background-image:url("../images/bg1.jpg");
+	background-repeat:no-repeat;
+}*/
+/*.s4{
+	background-image:url("../images/lapi1.jpg");
+	background-repeat:no-repeat;
+	height:255px;
+	width:100%;
+}*/
+.d8{
+	background-color:#497739;
+}
+.d9{
+	margin-left:150px;
+}
+.d10{
+    background-image:url("../images/bg2.jpg");
+	background-repeat:no-repeat;
+	width:900px;
+	height:337px;
+	float:left;
+	border-radius:15px;
+	box-shadow:2px 2px 3px #888888;
+	margin:10px;
+}
+
+.d2{
+	/*background-color:#4bb6e2;*/
+	width:260px;
+	height:303px;
+	float:left;
+	margin-left:30px;
+	margin-top:20px;
+}
+.d3{
+	/*background-color:#114815;*/
+	width:260px;
+	height:303px;
+	float:left;
+	margin-top:20px;
+	margin-left:30px;
+	font-size:15px;
+}
+.d4{
+	/*background-color:#4046e2;*/
+	width:260px;
+	height:303px;
+	float:left;
+	margin-top:20px;
+	margin-left:30px;
+}
+
+/*------------------Sign in CSS START------------------------*/
+.line8{
+	width:100%;
+	height:7px;
+	background-color:#00a875;
+}
+
+.sin1{
+	background-color:#151922;
+	background-image:url("../images/b2g.jpg");
+	background-repeat:no-repeat;
+	width:100%;
+}
+.sinn01{
+	background-color:#151922;
+	background-image:url("../images/b1g.jpg");
+}
+.sin{
+	margin-left:200px;
+	height:600px;
+	width:900px;
+}
+.sin2{
+	height:577px;
+	width:390px;
+	background-color:#ede3e3;
+	float:left;
+	box-shadow:2px 2px 3px #000;
+	margin:10px;
+}
+.sin3{
+	height:577px;
+	width:390px;
+	background-color:#00a875;
+	float:left;
+	box-shadow:2px 2px 3px #000;
+	margin:10px;
+}
+.sin31{
+	height:577px;
+	width:390px;
+	background-color:#00a875;
+	float:left;
+	box-shadow:2px 2px 3px #000;
+	margin-left:200px;
+	margin-top:10px;
+}
+/*------------------New footer part  in CSS START------------------------*/
+.down-main{
+	background-color:#e1f2fa;
+	float:left;
+	height:200px;
+	width:100%;
+}
+.down-main1{
+	background-color:#497739;
+	float:left;
+	width:100%;
+}
+.down-main2{
+  background-color:#fff;
+  margin-top:10px;
+}
+.down2{
+	width:100%;
+	height:370px;
+	background-color:#2b2e3b;
+	margin-top:20px;
+}
+.down21{
+	width:100%;
+	height:370px;
+	background-color:#2b2e3b;
+}
+.down3{
+	width:100%;
+	height:40px;
+	background-color:#262934;
+	font-family:tahoma;
+	font-size:12px;
+	text-align:center;
+	color:#fff;
+	line-height:40px;
+}
+.down4{
+	width:220px;
+	height:350px;
+	/*background-color:#fff000;*/
+	margin-top:10px;
+	float:left;
+}
+.down5{
+	width:620px;
+	height:350px;
+	/*background-color:#888e3b;*/
+	margin-top:10px;
+	float:left;
+}
+.down6{
+	width:420px;
+	height:350px;
+	/*background-color:#2b2fff;*/
+	margin-top:10px;
+	float:left;
+}
+.ac-container{
+  border: 1px solid #ccc;
+  height:50px;
+  width:170px;
+  margin-left:30px;
+  margin-top:30px;
+  text-align:center;
+}
+.ac-container:hover{
+  background-color:#f1f1f1;
+  color:#000;
+}
+
+.lin{
+	width:550px;
+	height:1px;
+	background-color:#181a21;
+	margin:40px;
+}
+.down7{
+	width:160px;
+	height:70px;
+	/*background-color:#00ff00;*/
+	float:left;
+	margin-left:30px;
+	margin-top:20px;
+}
+.down8{
+	width:160px;
+	height:70px;
+	/*background-color:#ffff00;*/
+	float:left;
+	margin-left:30px;
+	margin-top:20px;
+}
+
+.down8 img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.down8 img:hover {
+    
+	opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.down7 img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.down7 img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.down9{
+	border-bottom: 2px solid #00a875;
+	width:50px;
+	margin-left:55px;
+}
+.down10{
+	border-bottom: 2px solid #00a875;
+	width:50px;
+	margin-left:45px;
+}
+
+/*------------------Patners in CSS START------------------------*/
+
+.pat_01{
+	width:100%;
+	height:193px;
+	/*background-color:#ff00ff;*/
+	float:left;
+	background-image:url("../images/patners.jpg");
+	background-repeat:no-repeat;
+}
+.pat_02{
+	width:500px;
+	/*background-color:#4ea5ca;*/
+	margin-left:200px;
+	color:#000;
+	margin-top:10px;
+}
+.pat_03{
+	width:400px;
+	/*background-color:#4ff5ca;*/
+	color:#000;
+	margin-top:10px;
+}
+.pat_04{
+	width:100%;
+	height:45px;
+    background-color:#00a875;
+	color:#fff;
+	text-shadow:2px 2px 3px #000;
+	margin-top:10px;
+	float:left;
+}
+
+
+/*------------------Dashboard in CSS START------------------------*/
+.dash_08{
+	background-color:#151922;
+	height:860px;
+}
+.dash_09{
+	background-color:#dee9ed;
+	height:860px;
+}
+
+.dash_01{
+	background-color:#151922;
+	height:890px;
+	width:210px;
+}
+
+.dash_02{
+	background-color:#dee9ed;
+	height:890px;
+}
+.dash_03{
+	margin-top:15px;
+	color:#fff;
+}
+.dash_07:hover{
+	background-color:#00a875;
+	width:100%;
+}
+.dash_04{
+	margin-left:20px;
+	margin-top:15px;
+	color:#fff;
+}
+.dash_05{
+	width:100%px;
+	margin-top:10px;
+	background-color:#00a875;
+	height:50px;
+}
+
+.dash_06{
+	width:500px;
+	margin-top:20px;
+	background-color:#00a875;
+	height:50px;
+	margin-top:10px;
+	float:left;
+}
+/*------------------COURSES in CSS START------------------------*/
+
+.cor_01{
+	/*background-color:#00ff88;*/
+	width:100px;
+	height:40px;
+	margin-top:20px;
+	margin-left:10px;
+	float:left;
+}
+.cor_02{
+	/*background-color:#00ff88;*/
+	width:100px;
+	height:40px;
+	margin-top:20px;
+	margin-left:10px;
+	float:left;
+}
+.cor_03{
+	/*background-color:#00ff88;*/
+	width:100px;
+	height:40px;
+	margin-top:20px;
+	margin-left:10px;
+	float:left;
+}
+
+.cor_04{
+   margin-top:40px;
+   font-size:16px;
+}
+.cor_04 table{
+   background-color:#fff;
+   color:#000;
+}
+.cor_05{
+	width:300px;
+	height:40px;
+	/*background-color:#ff00ff;*/
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+}
+/*------------------Popup in CSS START------------------------*/
+.popu_01{
+	width:598px;
+	height:50px;
+	background-color:#00a875;
+	border-radius:2px;
+}
+
+.popu_02{
+	width:450px;
+	/*background-color:#abbeda;*/
+	margin-left:100px;
+}
+.popu_03{
+	width:400px;
+	margin-left:90px;
+}
+/*------------------Popup in CSS START------------------------*/
+
+.reg_01{
+	height:577px;
+	width:490px;
+	background-color:#fff;
+	float:left;
+	box-shadow:2px 2px 3px #000;
+	margin-left:150px;
+	margin-top:10px;
+}
+
+.reg_02{
+	height:50px;
+	width:490px;
+	background-color:#00a875;
+	margin-top:-20px;
+}
+.reg_03{
+	height:10px;
+	width:490px;
+	background-color:#00a875;
+	margin-top:140px;
+}
+/*------------------Demo page tabs in CSS START------------------------*/
+.de_01{
+	width:480px;
+	height:210px;
+	background-color:#fff;
+	border-right:1px solid #666;
+	margin-top:15px;
+	margin-left:30px;
+}
+.de_02{
+    height:10px;
+	background-color:#00a875;
+	margin-top:20px;
+}
+.ta01{
+	width:250px;
+	height:130px;
+	/*background-color:#00ffff;*/
+	float:left;
+	margin:20px;
+	margin-top:20px;
+}
+.ta02{
+	width:250px;
+	height:130px;
+	/*background-color:#0000ff;*/
+	float:left;
+	margin:15px;
+	margin-top:20px;
+}
+.ta03{
+	width:250px;
+	height:130px;
+	/*background-color:#00000f;*/
+	float:left;
+	margin:15px;
+	margin-top:20px;
+}
+.ta04{
+	width:250px;
+	height:130px;
+	/*background-color:#0dddff;*/
+	float:left;
+	margin:15px;
+	margin-top:20px;
+}
+.ta05{
+	width:25px;
+	height:40px;
+	/*background-color:#999;*/
+	float:left;
+	margin-left:65px;
+	margin-top:20px;
+}
+.ta06{
+	width:105px;
+	height:50px;
+	/*background-color:#333;*/
+	margin-left:10px;
+	float:left;
+	margin-top:17px;
+	font-size:16px;
+	color:#000;
+}
+.ta01_main{
+	/*background-color:#ffee33;*/
+	height:130px;
+	width:100%;
+	float:left;
+}
+.sl_01{
+	width:100%;
+	height:150px;
+}
+
+/*------------------Institute profile in CSS START------------------------*/
+.inst_01{
+	margin-left:80px;
+	margin-top:5px;
+}
+.inst_02{
+	width:90%;
+	height:700px;
+	background-color:#fff;
+	box-shadow:2px 2px 2px 2px #888888;
+	border-radius:15px;
+	margin-left:50px;
+	float:left;
+	padding-bottom:25px;
+}
+.inst_03{
+	margin-left:80px;
+	margin-top:15px;
+}
+.inst_04{
+	margin-top:15px;
+}
+.inst_05{
+    width:813px;
+	height:40px;
+	float:left;
+	/*background-color:#999;*/
+	margin-top:60px;
+	margin-left:-136px;
+}
+.inst_06{
+	margin-left:60px;
+}
+.inst_07{
+    width:382px;
+	height:40px;
+	float:left;
+	margin-top:15px;
+	/*background-color:#ff0;*/
+}
+.inst_08{
+    width:380px;
+	height:40px;
+	float:left;
+	margin-left:51px;
+	margin-top:15px;
+	/*background-color:#0f0;*/
+}
+
+/*------------------Trainer profile in CSS START------------------------*/
+.ti_01{
+	margin-top:20px;
+	background-color:#151922;
+	padding:20px;
+}
+.ti_02{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:50px;
+	color:#1a516d;	
+}
+.tit_02{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:10px;
+	color:#1a516d;	
+}
+/*------------------Login complete profile in CSS START------------------------*/
+.pro_01{
+	float:left;
+	width:430px;
+	height:35px;
+	/*background-color:#00ffee;*/
+	margin-top:20px;
+	margin-left:-70px;
+}
+.pro_02{
+	width:100%;
+	height:5px;
+	/*background-color:#00ffee;*/
+	float:left;
+	margin-top:5px;
+}
+
+
+
+
+
+

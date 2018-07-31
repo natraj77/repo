@@ -1,0 +1,452 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+http://www.springframework.org/schema/task 
+http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.polyglot" />
+
+	<context:property-placeholder location="classpath:${spring.profiles.active}.properties" />
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+		<property name="initialSize" value="${jdbc.initialSize}" />
+
+		<property name="validationQuery" value="SELECT 1" />
+		<property name="validationQueryTimeout" value="3" />
+
+		<property name="minIdle" value="5" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testWhileIdle" value="true" />
+		<property name="timeBetweenEvictionRunsMillis" value="300000" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>com.polyglot.domain</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.cglib.use_reflection_optimizer">true</prop>
+				<prop key="hibernate.default_schema">${jdbc.defaultSchema}</prop>
+				<prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- Bean mapping definitions -->
+	<bean id="courseDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnCourse</value>
+		</property>
+	</bean>
+	<bean id="courseService" class="com.polyglot.service.impl.DmnCourseServiceImpl">
+		<property name="courseDao" ref="courseDao" />
+	</bean>
+	<bean id="appCourseDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotCourse</value>
+		</property>
+	</bean>
+	<bean id="appCourseService" class="com.polyglot.service.impl.AppPolyglotCourseServiceImpl">
+		<property name="appCourseDao" ref="appCourseDao" />
+	</bean>
+		
+	<bean id="branchDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotBranch</value>
+		</property>
+	</bean>
+	<bean id="appBranchService" class="com.polyglot.service.impl.AppPolyglotBranchServiceImpl">
+		<property name="branchDao" ref="branchDao" />
+	</bean>
+	
+	<bean id="leadDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotLead</value>
+		</property>
+	</bean>
+	<bean id="appLeadService" class="com.polyglot.service.impl.AppPolyglotLeadServiceImpl">
+		<property name="leadDao" ref="leadDao" />
+	</bean>
+
+	<bean id="facultyDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotFaculty</value>
+		</property>
+	</bean>
+	<bean id="appFacultyService" class="com.polyglot.service.impl.AppPolyglotFacultyServiceImpl">
+		<property name="facultyDao" ref="facultyDao" />
+	</bean>
+	
+	<bean id="batchDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotBatch</value>
+		</property>
+	</bean>
+	<bean id="appBatchService" class="com.polyglot.service.impl.AppPolyglotBatchServiceImpl">
+		<property name="batchDao" ref="batchDao" />
+	</bean>
+	
+	<bean id="studentsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotStudent</value>
+		</property>
+	</bean>
+	<bean id="appStudentService" class="com.polyglot.service.impl.AppPolyglotStudentServiceImpl">
+		<property name="studentsDao" ref="studentsDao" />
+	</bean>
+	
+		<bean id="registrationDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppUsers</value>
+		</property>
+	</bean>
+	<bean id="registrationService" class="com.polyglot.service.impl.AppPolyglotRegistrationServiceImpl">
+		<property name="registrationDao" ref="registrationDao" />
+	</bean>
+	
+	<bean id="country" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnCntry</value>
+		</property>
+	</bean>
+	<bean id="countryService" class="com.polyglot.service.impl.DmnCountryServiceImpl">
+		<property name="country" ref="country" />
+	</bean>
+	
+	<bean id="states" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnStates</value>
+		</property>
+	</bean>
+	<bean id="statesService" class="com.polyglot.service.impl.DmnStatesServiceImpl">
+		<property name="states" ref="states" />
+	</bean>
+	
+	<bean id="cities" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnCities</value>
+		</property>
+	</bean>
+	<bean id="citiesService" class="com.polyglot.service.impl.DmnCitiesServiceImpl">
+		<property name="cities" ref="cities" />
+	</bean>
+	
+	<bean id="paymentDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotPayment</value>
+		</property>
+	</bean>
+	
+	<bean id="appPaymentService" class="com.polyglot.service.impl.AppPolyglotPaymentServiceImpl">
+		<property name="paymentDao" ref="paymentDao" />
+	</bean>
+	
+	<bean id="passoutYearDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnYrpassout</value>
+		</property>
+	</bean>
+	
+	<bean id="passoutYearService" class="com.polyglot.service.impl.DmnPassoutYearServiceImpl">
+		<property name="passoutYearDao" ref="passoutYearDao" />
+	</bean>
+	
+	
+	<bean id="degreeDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnDegree</value>
+		</property>
+	</bean>
+	
+	<bean id="degreeService" class="com.polyglot.service.impl.DmnDegreesServiceImpl">
+		<property name="degreeDao" ref="degreeDao" />
+	</bean>
+	
+	<bean id="courseTests" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnCoursesTests</value>
+		</property>
+	</bean>
+	
+	<bean id="courseTestService" class="com.polyglot.service.impl.DmnCoursesTestServiceImpl">
+		<property name="courseTests" ref="courseTests" />
+	</bean>
+	
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    
+    <bean id="plansDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotPlan</value>
+		</property>
+	</bean>
+	
+	<bean id="appPlansService" class="com.polyglot.service.impl.AppPolyglotPlanServiceImpl">
+		<property name="plansDao" ref="plansDao" />
+	</bean>
+	
+	<bean id="locationDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnLocation</value>
+		</property>
+	</bean>
+	
+	<bean id="locationService" class="com.polyglot.service.impl.DmnLocationServiceImpl">
+		<property name="locationDao" ref="locationDao" />
+	</bean>
+	<bean id="domainPlansDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnPolyglotPlans</value>
+		</property>
+	</bean>
+	
+	<bean id="dmnPlansService" class="com.polyglot.service.impl.DmnPolyglotPlansServiceImpl">
+		<property name="domainPlansDao" ref="domainPlansDao" />
+	</bean>
+	<bean id="keywordsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnKeywordCategories</value>
+		</property>
+	</bean>
+	
+	<bean id="dmnKeywordService" class="com.polyglot.service.impl.DmnKeywordCategoriesServiceImpl">
+		<property name="keywordsDao" ref="keywordsDao" />
+	</bean>
+	
+	<bean id="emailTemplateDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppEmailTemplate</value>
+		</property>
+	</bean>
+	
+	<bean id="emailTemplateService" class="com.polyglot.service.impl.AppEmailTemplateServiceImpl">
+		<property name="emailTemplateDao" ref="emailTemplateDao" />
+	</bean>
+	
+	<bean id="demoDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotDemo</value>
+		</property>
+	</bean>
+	
+	<bean id="demoService" class="com.polyglot.service.impl.AppPolyglotDemoServiceImpl">
+		<property name="demoDao" ref="demoDao" />
+	</bean>
+	
+	<bean id="demoStatusDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotLeadDemoStatus</value>
+		</property>
+	</bean>
+	
+	<bean id="demoStatusService" class="com.polyglot.service.impl.AppPolyglotLeadDemoStatusServiceImpl">
+		<property name="demoStatusDao" ref="demoStatusDao" />
+	</bean>
+	
+	<bean id="adminScheduler" class="com.polyglot.schedulers.PolyglotAdminSchedulers"></bean>
+	
+	<bean id="configService" class="com.polyglot.service.ConfigurationService"></bean>
+	
+	<bean id="emailService" class="com.polyglot.service.PolyglotEmailService">
+		<property name="configService" ref="configService" />
+	</bean>
+	
+	<bean id="taskDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotTask</value>
+		</property>
+	</bean>
+	
+	<bean id="taskService" class="com.polyglot.service.impl.AppPolyglotTaskServiceImpl">
+		<property name="taskDao" ref="taskDao" />
+	</bean>
+	
+	<bean id="studentTaskDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppStudentTask</value>
+		</property>
+	</bean>
+	
+	<bean id="studentTaskService" class="com.polyglot.service.impl.AppStudentTaskServiceImpl">
+		<property name="studentTaskDao" ref="studentTaskDao" />
+	</bean>
+	
+		<bean id="studentQuizDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppStudentQuiz</value>
+		</property>
+	</bean>
+	
+	<bean id="studentQuizService" class="com.polyglot.service.impl.AppStudentQuizServiceImpl">
+		<property name="studentQuizDao" ref="studentQuizDao" />
+	</bean>
+	
+	<bean id="bannerDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.AppPolyglotBanners</value>
+        </property>
+    </bean>
+    
+    <bean id="bannerService" class="com.polyglot.service.impl.AppPolyglotBannerServiceImpl">
+        <property name="bannerDao" ref="bannerDao" />
+    </bean>
+    
+    <bean id="templatesDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.AppPolyglotTemplates</value>
+        </property>
+    </bean>
+    
+    <bean id="templatesService" class="com.polyglot.service.impl.AppPolyglotTemplatesServiceImpl">
+        <property name="templatesDao" ref="templatesDao" />
+    </bean>
+    
+    <bean id="eventsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.AppPolyglotEvents</value>
+        </property>
+    </bean>
+    
+    <bean id="eventsService" class="com.polyglot.service.impl.AppPolyglotEventsServiceImpl">
+        <property name="eventsDao" ref="eventsDao" />
+    </bean>
+    
+    <bean id="newsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.AppPolyglotNews</value>
+        </property>
+    </bean>
+    
+    <bean id="newsService" class="com.polyglot.service.impl.AppPolyglotNewsServiceImpl">
+        <property name="newsDao" ref="newsDao" />
+    </bean>
+    
+    <bean id="dmnQuestionsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.DmnQuestions</value>
+        </property>
+    </bean>
+    
+    <bean id="dmnQuizService" class="com.polyglot.service.impl.DmnQuestionsServiceImpl">
+        <property name="dmnQuestionsDao" ref="dmnQuestionsDao" />
+    </bean>
+    
+    <bean id="appQuizDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+        <property name="clazz">
+            <value type="java.lang.Class">com.polyglot.domain.AppPolyglotQuiz</value>
+        </property>
+    </bean>
+    
+    <bean id="appQuizService" class="com.polyglot.service.impl.AppPolyglotQuizServiceImpl">
+        <property name="appQuizDao" ref="appQuizDao" />
+    </bean>
+    
+    <bean id="params" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.DmnParams</value>
+		</property>
+	</bean>
+	<bean id="paramsService" class="com.polyglot.service.impl.DmnParamsServiceImpl">
+		<property name="params" ref="params" />
+	</bean>
+	
+	<bean id="subscriptionDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppTrainerSubscriptions</value>
+		</property>
+	</bean>
+	<bean id="trainerSubscriptionService" class="com.polyglot.service.impl.AppTrainerSubscriptionServiceImpl">
+		<property name="subscriptionDao" ref="subscriptionDao" />
+	</bean>
+	
+	<bean id="socialMediaDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppUsersSocialMedia</value>
+		</property>
+	</bean>
+	<bean id="socialMediaService" class="com.polyglot.service.impl.AppUsersSocialMediaServiceImpl">
+		<property name="socialMediaDao" ref="socialMediaDao" />
+	</bean>
+	
+	<bean id="quizQuestionsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotQuizQuestions</value>
+		</property>
+	</bean>
+	<bean id="quizQuestionsService" class="com.polyglot.service.impl.AppPolyglotQuizQuestionsServiceImpl">
+		<property name="quizQuestionsDao" ref="quizQuestionsDao" />
+	</bean>
+	
+	<bean id="educationDetailsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppUsersEducationDetails</value>
+		</property>
+	</bean>
+	<bean id="educationDetailsService" class="com.polyglot.service.impl.AppUsersEducationDetailsServiceImpl">
+		<property name="educationDetailsDao" ref="educationDetailsDao" />
+	</bean>
+	
+	<bean id="experienceDetailsDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppUsersExperienceDetails</value>
+		</property>
+	</bean>
+	<bean id="experienceDetailsService" class="com.polyglot.service.impl.AppUsersExperienceDetailsServiceImpl">
+		<property name="experienceDetailsDao" ref="experienceDetailsDao" />
+	</bean>
+	
+	<bean id="skillSetDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppUsersSkillSetDetails</value>
+		</property>
+	</bean>
+	
+	<bean id="skillSetService" class="com.polyglot.service.impl.AppUsersSkillSetDetailsServiceImpl">
+		<property name="skillSetDao" ref="skillSetDao" />
+	</bean>
+	
+	<bean id="eventSubDao" class="com.polyglot.dao.impl.BaseDaoImpl">
+		<property name="clazz">
+			<value type="java.lang.Class">com.polyglot.domain.AppPolyglotEventSubscription</value>
+		</property>
+	</bean>
+	
+	<bean id="eventSubService" class="com.polyglot.service.impl.AppEventSubScriptionServiceImpl">
+		<property name="eventSubDao" ref="eventSubDao" />
+	</bean>
+		
+	<task:scheduled-tasks>
+		<task:scheduled ref="adminScheduler" method="runPlanScheduler" fixed-delay="86400000" />
+	</task:scheduled-tasks>
+</beans>

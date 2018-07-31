@@ -1,0 +1,59 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"courseName" : "AWS",
+		"description" : "AWS administration",
+		"courseContent" : "AWS administration AWS administration AWS administration AWS administration",
+		"domain" : "IT",
+		"category" : "cloud computing",
+		"subCategory" : "AWS",
+		"featuredCourse" : "Yes",
+		"smallimagePath" : "/resources/tn1/aws.jpg",
+		"detailImagePath" : "/resources/tn2/aws-detail.jpg",
+		"level" : "Beginner",
+		"title" : "page title goes here",
+		"keywords" : "AWS traiing in hyderabad",
+		"meatadesc" : "AWS powerfule and flexible for servers",
+		"relatedCourse" : "AWS"	,
+		"priority" : "1"	
+ 	},
+ 	{
+ 		"id" : "2",
+		"courseName" : "Linux",
+		"description" : "RedHat Linux administration",
+		"courseContent" : "AWS administration AWS administration AWS administration AWS administration",
+		"domain" : "IT",
+		"category" : "cloud computing",
+		"subCategory" : "AWS",
+		"featuredCourse" : "No",
+		"smallimagePath" : "/resources/tn1/aws.jpg",
+		"detailImagePath" : "/resources/tn2/redhat-linux.jpg",
+		"level" : "Beginner",
+		"title" : "page title goes here",
+		"keywords" : "redhat linux traniing in hyderabad",
+		"meatadesc" : "redhat linux powerfule and flexible for servers",
+		"relatedCourse" : "linux" ,
+		"priority" : "2"	
+ 	},
+ 	{
+ 		"id" : "3",
+		"courseName" : "Hadoop",
+		"description" : "RedHat Linux administration",
+		"courseContent" : "AWS administration AWS administration AWS administration AWS administration",
+		"domain" : "IT",
+		"category" : "Bigdata",
+		"subCategory" : "Hadoop",
+		"featuredCourse" : "No",
+		"smallimagePath" : "/resources/tn1/hadoop.jpg",
+		"detailImagePath" : "/resources/tn2/redhat-linux.jpg",
+		"level" : "Beginner",
+		"title" : "page title goes here",
+		"keywords" : "hadoop traniing in hyderabad",
+		"meatadesc" : "redhat linux powerfule and flexible for servers",
+		"relatedCourse" : "Hadoop" ,
+		"priority" : "3"		
+ 	}
+ 
+ ]
+}

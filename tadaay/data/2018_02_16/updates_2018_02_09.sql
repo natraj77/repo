@@ -1,0 +1,1 @@
+ALTER TABLE `app_users_experience_details` CHANGE  COLUMN `partner_id`  `appuserId` INT(11) NOT NULL;

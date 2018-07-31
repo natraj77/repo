@@ -1,0 +1,1 @@
+ALTER TABLE `app_polyglot_lead` ADD `comments` VARCHAR(250) NULL AFTER `lead_status`;

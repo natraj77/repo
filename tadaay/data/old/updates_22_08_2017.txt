@@ -1,0 +1,1 @@
+ALTER TABLE `app_polyglot_plan` ADD `is_expired` VARCHAR(1) NOT NULL AFTER `last_insrt_upd_ts`;

@@ -1,0 +1,1 @@
+ALTER TABLE `app_polyglot_student` CHANGE `joined_date` `joined_date` VARCHAR(10) NULL;

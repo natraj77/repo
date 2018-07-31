@@ -1,0 +1,22 @@
+.sidebar-skilled-area ul li .skilled-content {
+    -webkit-box-flex: 3;
+    -moz-flex: 3;
+    /* -webkit-flex: 3; */
+    flex: 2;
+}
+.play-time {
+   position:absolute;
+   bottom:0px;
+   right:0px;
+   color:#fff;
+   background-color:#39393e;
+   padding:2px 5px;
+}
+.related-img {
+    position: relative;
+}
+.video-price{
+    padding: 12px 34px;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,0 +1,126 @@
+<section id="eventThird">
+				<div class="container">
+					<!-- Inner Page Banner Area End Here -->
+                    <!-- Events Page 5 Area Start Here -->
+                    <div>
+                      <div class="container">
+                        <div class="row"> 
+                        <div class="header-wrap">
+                        			<div class="static-banner">
+                    					<div class="banner-img-container">
+                    							<img src="<%=request.getContextPath()%>/resources/images/event/bg10.jpg">
+                    					</div>
+                    				</div>
+                    				<div class="custom_menu_wrapper " data-sticky="true">
+                    				<div class="date_title-wrapper">
+                    					<div class="data-wrapper">
+                    						<div class="title-wrapper">
+                    							<div class="date-wrapper">
+                    								<div class="multiple-venue-wrapper">
+                    									<div class="__month">Sep</div>
+                    									<div class="__date">07</div>
+                    								</div>
+                    								<span class="_hyphen">-</span>
+                    								<div class="multiple-venue-wrapper">
+                    									<div class="__month">Sep</div>
+                    									<div class="__date">08</div>
+                    								</div>
+                    							</div>
+                    							<div class="__title-info-container multiple-venue-title">
+                    								<h1 class="__title">Road to Ultra: India ft. The Chainsmokers </h1>
+                    								<div class="__details-wrapper multiple-venue-details">
+                    								<div class="__venue">India Exposition Mart Limited: Delhi | 08 Sep 01:00 pm</div>																																													<div class="__price">| <span>₹ 1,999</span> Onwards</div>
+                    								</div>
+                    							</div>
+                    						</div>
+                    						<div class="button-wrapper">
+                                                <button class="btn btn-book ">book</button>
+                    						</div>
+                    					</div>
+                    				</div>
+                    			</div>		
+                    		<div class="select-overlay-nav z-overlay" id=""></div>
+                    		<div class="temp-div"></div></div>
+                          <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <div>
+                    			<div class="simple-timer" data-counttodatetime="September 7 2017 13:00:00">
+                    				<div class="eve-time-date">
+                    					<div class="eve-time">Road to Mumbai :</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-day-value">55</div>
+                    							<div class="eve-day js-day-text">days</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-hr-value">2</div>
+                    							<div class="eve-day js-hr-text">hours</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-min-value">10</div>
+                    							<div class="eve-day js-min-text">minutes</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-sec-value">58</div>
+                    							<div class="eve-day js-sec-text">seconds</div>
+                    						</div>
+                    				</div>
+                    			</div>
+                    			<div class="simple-timer" data-counttodatetime="September 7 2017 13:00:00">
+                    				<div class="eve-time-date">
+                    					<div class="eve-time">Road to Delhi :</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-day-value">55</div>
+                    							<div class="eve-day js-day-text">days</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-hr-value">2</div>
+                    							<div class="eve-day js-hr-text">hours</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-min-value">10</div>
+                    							<div class="eve-day js-min-text">minutes</div>
+                    						</div>
+                    						<div class="eve-colon">:</div>
+                    						<div class="eve-details" data-init-value="">
+                    							<div class="eve-num js-sec-value">58</div>
+                    							<div class="eve-day js-sec-text">seconds</div>
+                    						</div>
+                    				</div>
+                    			</div>
+                    			<div class="simple-timer">
+                    				<p>For Corporate/Bulk bookings kindly enquire <a href="#">here</a>.</p>
+                    				<p>Get more information on the <a href="#">VVIP Tables</a> Experience! .</p>
+                    			</div>
+                    			<div class="simple-timer">
+                    				<p>Get your tickets to the hear the best of Electronic Dance Music at the Road to Ultra event 
+                    				happening in India for the very first time. Catch The Chainsmokers and other renowned 
+                    				acts such as Slushii, Getter, Rezz, Sam Feldt and Lost Kings performing their hits
+                    				 live in Mumbai on the 7th of September and in Delhi on the 8th of September, 2017..</p>
+                    				 <p>Get your tickets to the hear the best of Electronic Dance Music at the Road to Ultra event 
+                    				happening in India for the very first time. Catch The Chainsmokers and other renowned 
+                    				acts such as Slushii, Getter, Rezz, Sam Feldt and Lost Kings performing their hits
+                    				 live in Mumbai on the 7th of September and in Delhi on the 8th of September, 2017..</p>
+                    			</div>
+                            </div>  
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    			<div class="terms-conditions-details">
+                    			<p class="title-terms">Venue Details</p>
+                    			<address>
+                        				307/B Ameerpet<br>
+                        				Aditya Enclave<br>
+                        				Nilgiri Block</br>
+                        				Hyderabad.
+                    			</address>
+                        		</div>
+                          </div>                
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Events Area End Here -->
+				</div>
+			</section>

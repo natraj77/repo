@@ -1,0 +1,1 @@
+alter table app_users MODIFY  `password` VARCHAR(256);

@@ -1,0 +1,10 @@
+
+
+
+.search-table{
+    font-family: open sans,sans-serif;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    @include placeholder(#e7eaec, 12px, open sans);
+}

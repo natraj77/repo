@@ -1,0 +1,1 @@
+CREATE TABLE `polyglot`.`app_polyglot_task` ( `id` INT NOT NULL AUTO_INCREMENT , `task_name` VARCHAR(100) NOT NULL , `file_name` VARCHAR(100) NOT NULL , `file_path` VARCHAR(100) NOT NULL , `is_active` VARCHAR(1) NOT NULL , `last_insrt_upd_usr_id` INT NOT NULL , `last_insrt_upd_ts` DATETIME NOT NULL , `partner_id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

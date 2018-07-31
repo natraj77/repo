@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<workbook>
+	<worksheet idx="0">
+		<loop startRow="1" endRow="1" items="leads" var="lead" varType="com.polyglot.domain.AppPolyglotLead">
+			<section startRow="1" endRow="1">
+				<mapping cell="A2">lead.comments</mapping>
+				<mapping cell="B2">lead.firstName</mapping>
+				<mapping cell="C2">lead.lastName</mapping>
+				<mapping cell="D2">lead.mobile</mapping>
+				<mapping cell="E2" >lead.email</mapping>
+				<mapping cell="F2">lead.source</mapping>
+				<mapping cell="G2">lead.course</mapping>
+				<mapping cell="H2">lead.mode</mapping>
+				<mapping cell="I2">lead.preferredTime</mapping>
+				<mapping cell="J2">lead.leadStatus</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+</workbook>

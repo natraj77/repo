@@ -1,0 +1,59 @@
+pipeline {
+
+	agent any
+	environment {
+		MVN_HOME = '/opt/maven'
+	}
+		stages{
+   
+			stage('checkout') {
+				steps {
+					checkout([$class: 'GitSCM', branches: [[name: '*/dev']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '68845d76-658f-4526-af3f-cdbd49138d7e', url: 'https://snreddyb@bitbucket.org/tadaay-dev/tadaay.git']]])
+				}
+          
+			}
+			stage('Build') {
+				steps { 
+					sh "'${MVN_HOME}/bin/mvn' clean package"
+				}
+			}
+
+			stage('UploadToNexus'){
+				steps {
+					nexusPublisher nexusInstanceId: '0495', nexusRepositoryId: 'tadaa_qa', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/ROOT.war']], mavenCoordinate: [artifactId: 'Tadaay', groupId: 'com.polyglot', packaging: 'war', version: '$BUILD_NUMBER']]]
+				}
+			}
+			stage('deploy to qa'){
+				steps {
+					ansiblePlaybook credentialsId: 'a2bcd0f8-677e-49bc-be49-7aade6676fb2', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/nexus.yml', sudo: true, sudoUser: null
+				}
+			}	
+			stage('updating sql file to qa db'){
+				steps {
+					ansiblePlaybook credentialsId: 'a2bcd0f8-677e-49bc-be49-7aade6676fb2', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/updatesql_qa.yml', sudo: true, sudoUser: null
+				}
+			}
+			stage('deploy to staging'){
+				steps {
+					ansiblePlaybook credentialsId: 'cf51fe53-9242-4c44-bbc4-95c84ddcfbed', installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/deploy.yml', sudo: true, sudoUser: null
+				}
+			}
+					
+			stage('updating sql file to stg db'){
+				steps {
+					ansiblePlaybook credentialsId: 'cf51fe53-9242-4c44-bbc4-95c84ddcfbed', installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/updatesql_stg.yml', sudo: true, sudoUser: null
+				}
+			}
+		}
+		
+		post { 
+			failure { 
+				println currentBuild.result  // this prints null
+				step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: 'support@polyglotit.com', sendToIndividuals: true])
+			}
+			success {
+				mail bcc: '', body: 'buid successfull', cc: '', from: 'jenkins@polyglot.in', replyTo: '', subject: 'jenkins build', to: 'support@polyglotit.com'
+		
+			}
+        }
+}

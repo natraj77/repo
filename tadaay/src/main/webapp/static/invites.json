@@ -1,0 +1,29 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"firstName" : "sukanya",
+		"lastName" : "d",
+		"mobile" : "8121858081",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"status" : "Invited"
+ 	},
+ 	{
+ 		"id" : "2",
+		"firstName" : "sathesh",
+		"lastName" : "ch",
+		"mobile" : "9999999999",
+		"email" : "sample@gmail.com",
+		"status" : "Invited"
+ 	},
+ 	{
+ 		"id" : "3",
+		"firstName" : "sathesh",
+		"lastName" : "ch",
+		"mobile" : "9999999999",
+		"email" : "satheesh.challa@polyglotit.com",
+		"status" : "Invited"
+ 	}
+ 
+ ]
+}

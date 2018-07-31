@@ -1,0 +1,188 @@
+<section id="eventFourth">
+  				<div class="container">
+				    <div class="row"> 
+				    	<div class="inner-banner-block">
+					        <div class="container">
+					            <div class="inner-banner-block-left float-l">
+					            	<img src="<%=request.getContextPath()%>/resources/images/event/bg10.jpg" alt="Indra at BPM" width="1440">
+					            </div>
+					            <div class="inner-banner-block-right float-r">
+					                <ul>
+					                    <li> <i class="sprite-icon time-icon"></i>
+					                        <div class="event-info-block">
+					                            <h3>Date &amp; Time</h3>
+					                            <p>6th Aug 2017</p>
+					                            <p>05:00 PM-11:00 PM</p>
+					                        </div>
+					                    </li>
+					                    <li><i class="sprite-icon venue-icon"></i>
+					                        <div class="event-info-block">
+					                            <h3>Venue</h3>
+					                             <input id="more-text-with-dots" value="Beats Per Minute , Gowlidoddi Road, Gachibowli, Hyderabad, Telangana, 500075" type="hidden">
+					                            <p class="more-text show-more"><span>Beats Per Minute , Gowlidoddi Road, Gachibowl...</span>
+					                            <a class="more" href="">more</a></p>
+					                        </div>
+					                    </li>
+					                    <li><i class="sprite-icon contact-info-icon"></i>
+					                    	<div class="event-info-block">
+					                            <h3>Contact Info</h3>
+					                         	<p><span>Name: Lohit</span></p>                                
+					                         	<p><span>Ph: 9000406633</span></p>                                
+					                         	<p style="overflow: hidden; text-overflow: ellipsis;">Email : <a href="mailto:Lohit.b@eventsnow.com">Lohit.b@eventsnow.com</a></p>                            
+					                        </div>
+					                    </li>
+					                 </ul>
+					            </div>
+					        </div>
+					    </div>
+					    <!-- top Block End -->
+					    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					      	 <div class="course-details-tab-area">
+					            <div class="row">
+					              <div class="col-lg-12 col-md-12 col-sm-12">
+					               <div class="futures-block">
+						                <div class="sharethis"> 
+						                    <div class="sharethis-inline-share-buttons st-inline-share-buttons  st-center st-animated" id="st-1">
+							                    <div class="st-btn st-first st-last   st-remove-label" data-network="sharethis" style="display: inline-block;">
+													<svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+														  <g>
+														    <path d="m30 26.8c2.7 0 4.8 2.2 4.8 4.8s-2.1 5-4.8 5-4.8-2.3-4.8-5c0-0.3 0-0.7 0-1.1l-11.8-6.8c-0.9 0.8-2.1 1.3-3.4 1.3-2.7 0-5-2.3-5-5s2.3-5 5-5c1.3 0 2.5 0.5 3.4 1.3l11.8-6.8c-0.1-0.4-0.2-0.8-0.2-1.1 0-2.8 2.3-5 5-5s5 2.2 5 5-2.3 5-5 5c-1.3 0-2.5-0.6-3.4-1.4l-11.8 6.8c0.1 0.4 0.2 0.8 0.2 1.2s-0.1 0.8-0.2 1.2l11.9 6.8c0.9-0.7 2.1-1.2 3.3-1.2z"></path>
+														  </g>
+													</svg>  
+												</div>
+											</div>
+										</div>
+										<div class="add-panel">
+											<div class="feed" id="feed1">
+												<div class="heart" id="like1" title="Add to Favourite" rel="like">
+												</div>
+											</div>
+											<div class="caldr-panel">
+												<a title="Add to Google Calendar" target="blank" id="gCalendarOpen" href="#"><span class="add-calendar-icon"></span>
+												</a>
+						                        <a id="gCalendarClose" style="display: none;"><span class="add-calendar-icon"></span></a>
+						                    </div>
+						                </div>
+						            </div>
+					              	<ul class="course-details-tab-btn">
+					                  <li class="active">
+					                 	 <a href="#features" data-toggle="tab" aria-expanded="false">By Tickets</a>
+					                  </li>
+					                  <li>
+					                  	<a href="#curriculum" data-toggle="tab" aria-expanded="false">About Event</a>
+					                  </li>
+					                  <li>
+					                  	<a href="#artist-info" data-toggle="tab" aria-expanded="false">Get Directions</a>
+					                  </li>		                 
+					                </ul>
+					              </div>
+					              <div class="col-lg-12 col-md-12 col-sm-12">
+					                <div class="tab-content tabs-contant-block">
+					                  <div class="tab-pane fade active in" id="features">
+					                  <div class="ribbon red" title="Food &amp; Nightlife"><a>F</a></div>
+					                  <div class="tabs-contant-block-left">
+								            <form method="post" accept-charset="utf-8" id="ticketDetails" action="/transactions/checkout">
+									            <div style="display:none;">
+									            <input name="_method" value="POST" type="hidden">
+									            <input name="_csrfToken" value="" type="hidden">
+									            </div>
+								            <input name="event_id" class="event_id" id="event-id" value="8222" type="hidden">
+								            <input name="event_slug" class="event_slug" id="event-slug" value="indra-at-bpm" type="hidden">
+								            <input name="terms_conditions" class="terms_conditions" id="terms-conditions" value="" type="hidden">           
+								             <ul class="cat-de-block clear-fix">
+			                                    <li class="cat-de-lst">
+							                        <div class="cd-le-top clear-fix">
+							                            <aside class="float-l">
+							                                <h4>Early Bird  </h4>
+							                                <p><b>Start Day: </b>19 Jul, 2017<font>to</font> <b>Last Day: </b>25 Jul, 2017</p>
+							                            </aside>
+							                            <div class="float-r">
+							                                <ul class="clear-fix">
+							                                    <li><span class="rupeeSym">₹</span><span id="ticket_value_12967"> 777</span></li>
+                                                                    <li>
+							                                            <select name="tickets[]" class="detail-select quantity hasdata" onchange="calculateTax(12967, (this.value).split('-')[1])" id="ticket-12967">
+							                                                <option value="">0</option>
+							                                                <option name="12967-1" value="12967-1">1</option>
+							                                                <option name="12967-2" value="12967-2">2</option>
+							                                                <option name="12967-3" value="12967-3">3</option>
+							                                                <option name="12967-4" value="12967-4">4</option>
+							                                                <option name="12967-5" value="12967-5">5</option>
+							                                                <option name="12967-6" value="12967-6">6</option>
+							                                                <option name="12967-7" value="12967-7">7</option>
+							                                                <option name="12967-8" value="12967-8">8</option>
+							                                                <option name="12967-9" value="12967-9">9</option>
+							                                                <option name="12967-10" value="12967-10">10</option>                                          
+						                                                  </select>
+							                                        </li>
+							                                        <li><span class="rupeeSym">₹</span><span id="selected_ticket_value_12967"> 0</span></li>
+                                                             </ul>
+							                            </div>
+							                        </div>
+								                        <div class="cd-le-bot clear-fix">
+								                        </div>
+								                 </li>
+								                 <li class="cat-de-lst">
+								                        <div class="cd-le-top clear-fix">
+								                            <aside class="float-l">
+								                                <h4>Phase 1 </h4>
+								                                <p><b>Start Day: </b>25 Jul, 2017<font>to</font> <b>Last Day: </b>5 Aug, 2017</p>
+								                            </aside>
+								                            <div class="float-r">
+								                                <ul class="clear-fix">
+								                                    <li><span class="rupeeSym">₹</span><span id="ticket_value_12968"> 1111</span></li>
+								                                    <span class="comingsoon">Coming Soon</span>                                
+								                                  </ul>
+								                            </div>
+								                        </div>
+								                        <div class="cd-le-bot clear-fix">
+								                        </div>
+								                 </li>
+								                 <li class="cat-de-lst">
+								                        <div class="cd-le-top clear-fix">
+								                            <aside class="float-l">
+								                                <h4>Phase 2 </h4>
+								                                <p><b>Start Day: </b>5 Aug, 2017<font>to</font> <b>Last Day: </b>6 Aug, 2017</p>
+								                            </aside>
+								                            <div class="float-r">
+								                                <ul class="clear-fix">
+								                                    <li><span class="rupeeSym">₹</span><span id="ticket_value_12969"> 1500</span></li>
+								                                    <span class="comingsoon">Coming Soon</span>                                
+								                                  </ul>
+								                            </div>
+								                        </div>
+								                        <div class="cd-le-bot clear-fix">
+								                         </div>
+								                  </li>
+								                   </ul>
+								            		<div class="tax-calculations"></div>
+								            	</form>        
+								            </div>	
+								            <div class="tabs-contant-block-right">
+									            <h3>Event Description</h3>
+									            <p>VR 1 Gatherings is hosting a Food &amp; Art Festival @ BPM on Sunday the 6th of August 2017 featuring Indra from Israel for his First ever performance in Hyderabad. Joining him will be Shri who will be Lighting up the Evening with her Magical Voice after which the Pioneer of the Hyderabad Dance Evolution, Murthovic takes centre stage for a Special 2 Hour Set during Sunset.Keeping up the Momentum w</p>
+									            <a class="readmore-button">Read more +</a>
+									        </div>						
+					                  </div>
+					                  <div class="tab-pane fade" id="curriculum">
+					                   		<div class="venue-details">
+												<h3 class="discription-heading">Event Description</h3>
+												<p><br>VR 1 Gatherings is hosting a Food &amp; Art Festival @ BPM on Sunday the 6th of August 2017 featuring Indra from Israel for his First ever performance in Hyderabad. <br>Joining him will be Shri who will be Lighting up the Evening with her Magical Voice after which the Pioneer of the Hyderabad Dance Evolution, Murthovic takes centre stage for a Special 2 Hour Set during Sunset.<br>Keeping up the Momentum will be Beatquence and Space Gypsy, two upcoming Musical Talents from our city. After which the Master from Israel, Indra will take over the decks for an Exclusive set for the Nawabs . Our hometown boy, Alex Light will be closing the<br>night with some surreal sounds from Outer Space. <br>The Gathering will have a Unique Art Exhibition where the Amazingly Gifted Talents from Hyderabad will be showcasing their Uplifting Artworks. <br>We will also be treated to some yummy ‘Apna Hyderabadi style’ delicacies as Flavours of Telangana, Zab’s Doner House &amp; Grill 9 will be putting up their food stalls. <br>We all welcome you for a Beautiful Night under the Stars for an Experience you will Savour.</p>
+											</div>                                      
+					                  </div>
+					                  <div class="tab-pane fade" id="artist-info">
+					                 	 <h3 class="discription-heading">
+            								Beats Per Minute , Gowlidoddi Road, Gachibowli, Hyderabad, Telangana, 500075</h3>
+					                   			<div class="map" onclick="BigMap();" style="overflow: hidden; cursor: pointer; border: 1px solid rgb(202, 202, 202); height: 720px; width:100%; ">
+												Map
+												</div>                     
+					                  </div>
+					                </div>
+					              </div>
+					            </div>
+					          </div>
+					        <div>
+					        </div>  
+					      </div>
+	    			</div>
+  				</div>
+			</section>

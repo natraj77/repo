@@ -1,0 +1,42 @@
+.jobcontent{
+	line-height: 25px;
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+.jobcontent h2{
+	color: #82368C;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.jobcontent p{
+	color:  #090d90;
+    font-size: 11.0pt;
+    font-weight: bold;
+}
+.previewmoreskills, .previewmorerounds{
+	padding-left:30px;
+	margin-bottom:20px;
+}
+.jobcontent p span{
+	color: #666;
+	font-size: 14px;
+	font-weight:normal;
+}
+.roundshead{
+	margin-bottom:10px;
+}
+.roundshead span{
+	font-weight:bold;
+}
+.skillresultdiv ul{
+	padding-left:0px;
+}
+.skillresultdiv li {
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom: #bbb9b9 1px solid;
+    list-style:none;
+    cursor:pointer;
+}

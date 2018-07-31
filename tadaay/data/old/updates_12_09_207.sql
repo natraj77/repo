@@ -1,0 +1,1 @@
+ALTER TABLE `app_polyglot_plan` ADD `keyword` VARCHAR(100) NOT NULL AFTER `partner_id`, ADD `location` VARCHAR(100) NOT NULL AFTER `keyword`, ADD `duration` VARCHAR(25) NOT NULL AFTER `location`;

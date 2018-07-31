@@ -1,0 +1,35 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"instName" : "Polyglot It Solutions",
+		"mobile" : "8121858081",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"status" : "Registered",
+		"joineddate" : "22-01-2018",
+		"lastLogin" : "22-02-2018 1:00 AM"
+		
+ 	},
+ 	{
+ 		"id" : "2",
+		"instName" : "Polyglot It Solutions",
+		"mobile" : "8121858081",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"status" : "Registered",
+		"joineddate" : "22-01-2018",
+		"lastLogin" : "22-02-2018 1:00 AM"
+		
+ 	},
+ 	{
+ 		"id" : "3",
+		"instName" : "Polyglot It Solutions",
+		"mobile" : "8121858081",
+		"email" : "sukanya.danasi@polyglotit.com",
+		"status" : "Registered",
+		"joineddate" : "22-01-2018",
+		"lastLogin" : "22-02-2018 1:00 AM"
+		
+ 	}
+ 
+ ]
+}

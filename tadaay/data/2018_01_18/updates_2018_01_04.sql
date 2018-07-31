@@ -1,0 +1,1 @@
+DELETE FROM `app_polyglot_course` WHERE dmn_course_id IS NULL;

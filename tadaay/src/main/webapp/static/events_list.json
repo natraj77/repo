@@ -1,0 +1,42 @@
+{
+ "data" : [
+ 	{
+ 		"id" : "1",
+		"eventTitle" : "AWS",
+		"description" : "AWS administration",
+		"organizer" : "Polyglot",
+		"dateTime" : "02-02-18",
+		"venue" : "Ameerpet",
+		"entryFee" : "1000",
+		"metaTitle" : "aws",
+		"metaKeywords" : "aws keyword",
+		"metaDescription" : "administration"
+ 	},
+ 	{
+ 		"id" : "1",
+		"eventTitle" : "AWS",
+		"description" : "AWS administration",
+		"organizer" : "Polyglot",
+		"dateTime" : "02-02-18",
+		"venue" : "Ameerpet",
+		"entryFee" : "1000"	,
+		"metaTitle" : "aws",
+		"metaKeywords" : "aws keyword",
+		"metaDescription" : "administration"
+		
+ 	},
+ 	{
+ 		"id" : "1",
+		"eventTitle" : "AWS",
+		"description" : "AWS administration",
+		"organizer" : "Polyglot",
+		"dateTime" : "02-02-18",
+		"venue" : "Ameerpet",
+		"entryFee" : "1000"	,
+		"metaTitle" : "aws",
+		"metaKeywords" : "aws keyword",
+		"metaDescription" : "administration"
+ 	}
+ 
+ ]
+}

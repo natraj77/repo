@@ -1,0 +1,36 @@
+{
+ "data" : [
+ 	{
+ 		"Id" : "1",
+ 		"jobId" : "PGITS001",
+		"jobTitle" : "AWS solution Architect Associate",
+		"noPositions" : "4",
+		"createdDate" : "08-2-2018 01:50",
+		"closedDate" : "",
+		"active" : "Open",
+		"jobType" : "<span class='blink' style='background-color:red;color:#fff;padding:5px 10px'>Hot</span>"
+ 	},
+ 	{
+ 		"Id" : "2",
+ 		"jobId" : "PGITS002",
+		"jobTitle" : "AWS solution Architect Associate",
+		"noPositions" : "4",
+		"createdDate" : "08-2-2018 01:50",
+		"closedDate" : "08-2-2018 01:50",
+		"active" : "Closed",
+		"jobType" : "<span>Walkin</span>"
+		
+ 	},
+ 	{
+ 		"Id" : "3",
+ 		"jobId" : "PGITS003",
+		"jobTitle" : "AWS solution Architect Associate",
+		"noPositions" : "4",
+		"createdDate" : "08-2-2018 01:50",
+		"closedDate" : "08-2-2018 01:50",
+		"active" : "Closed",
+		"jobType" : "<span>Regular</span>"
+ 	}
+ 
+ ]
+}
